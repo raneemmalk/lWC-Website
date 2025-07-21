@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | LWC</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        :root {
+            --blue: #004aad;
+            --orange: #fe7702;
+            --white: #ffffff;
+            --gray: #222;
+            --light: #f9f9f9;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #e0e0e0, #ffffff);
+            color: var(--gray);
+        }
+
+        header {
+            background: var(--blue);
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo-text {
+            color: var(--orange);
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav a {
+            color: var(--white);
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--orange);
+        }
+
+        .contact-hero {
+            text-align: center;
+            padding: 80px 20px 40px;
+            background: linear-gradient(135deg, #004aad, #002d6b);
+            color: var(--white);
+        }
+
+        .contact-hero h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .contact-hero p {
+            font-size: 18px;
+            opacity: 0.8;
+        }
+
+        .contact-section {
+            max-width: 600px;
+            margin: auto;
+            padding: 60px 20px;
+            background: var(--white);
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease forwards;
+            position: relative;
+            z-index: 2;
+        }
+
+        .form-group {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid var(--gray);
+            border-radius: 8px;
+            font-size: 16px;
+            background: transparent;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-group label {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            color: #777;
+            background: var(--white);
+            padding: 0 5px;
+            pointer-events: none;
+            transition: 0.2s ease;
+        }
+
+        .form-group input:focus+label,
+        .form-group input:not(:placeholder-shown)+label,
+        .form-group textarea:focus+label,
+        .form-group textarea:not(:placeholder-shown)+label {
+            top: -10px;
+            font-size: 13px;
+            color: var(--blue);
+        }
+
+        button {
+            background: var(--orange);
+            color: var(--white);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #e96000;
+        }
+
+        footer {
+            background-color: var(--gray);
+            color: var(--white);
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="LWC-LOGO-White 300.png" alt="LWC Logo" class="logo-img">
+            <div class="logo-text">LWC</div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="contact-hero">
+        <h1>Contact Us</h1>
+        <p>Got questions or ideas? We'd love to hear from you!</p>
+    </section>
+
+    <section class="contact-section">
+        <form>
+            <div class="form-group">
+                <input type="text" id="name" placeholder=" " required />
+                <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder=" " required />
+                <label for="email">Your Email</label>
+            </div>
+            <div class="form-group">
+                <textarea id="message" placeholder=" " required></textarea>
+                <label for="message">Your Message</label>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Learning Web Club. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

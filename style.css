@@ -1,0 +1,172 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f97316; 
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #f97316; 
+  }
+  
+  .hero {
+    background: linear-gradient(to right, #f97316, #1e3a8a);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero-content h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    background-color: white;
+    color: #1e3a8a;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #f97316;
+    color: white;
+  }
+  
+  section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .about-section,
+  .courses-section,
+  .contact-section {
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    padding: 40px;
+  }
+  
+  .course-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .course-card {
+    flex: 1 1 30%;
+    background-color: #e5e7eb;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .course-card:hover {
+    transform: scale(1.05);
+    background-color: #f97316;
+    color: white;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .contact-form button {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #f97316;
+  }
+  
+  footer {
+    background-color: #1f2937; 
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+  }
+  
+  .social a {
+    margin: 0 10px;
+    color: #f97316;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .social a:hover {
+    color: #ffffff;
+  }
+  
+  
